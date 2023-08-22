@@ -14,36 +14,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html>
 			<body>
+				<div className="background-image"></div>
 				<main>
-					<nav>
-						<div className="navbar bg-base-100 flex justify-center items-center">
-							<div className="navbar-center lg:flex">
-								<ul className="menu menu-horizontal flex items-center">
-									<li className="me-3">
-										<div className="p-0 m-0">
-											<Link href="/" className="btn btn-outline">
-												HOME
-											</Link>
-										</div>
-									</li>
-									<li className="me-3">
-										<div className="p-0 m-0">
-											<Link href="/projects" className="btn btn-outline">
-												PROJECTS
-											</Link>
-										</div>
-									</li>
-									<li className="me-3">
-										<div className="p-0 m-0">
-											<Link href="/projects" className="btn btn-outline">
-												WORK EXPERIENCE
-											</Link>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
+					<div className="flex justify-center">
+						<nav className="bg-white bg-opacity-85 shadow-lg rounded-xl backdrop-blur-md p-4 my-10 w-auto">
+							<ul className="flex justify-center space-x-4">
+								<li>
+									<Link href="/" className="text-base-900 font-medium hover:text-base-700">
+										Home
+									</Link>
+								</li>
+								<li>
+									<Link href="/" className="text-base-900 font-medium hover:text-base-700">
+										Home
+									</Link>
+								</li>
+								<li>
+									<Link href="/" className="text-base-900 font-medium hover:text-base-700">
+										Home
+									</Link>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
 					{children}
 				</main>
 			</body>
