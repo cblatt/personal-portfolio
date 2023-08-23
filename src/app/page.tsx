@@ -131,6 +131,10 @@ export default function HomePage() {
 										<span>Javascript</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
+										<img src="/images/typescript.png" alt="typescript" className="h-12 w-12" />
+										<span>Typescript</span>
+									</div>
+									<div className="flex flex-col items-center space-y-2 mt-4">
 										<img src="/images/django.png" alt="Django" className="h-12 w-12" />
 										<span>Django</span>
 									</div>
@@ -141,10 +145,6 @@ export default function HomePage() {
 									<div className="flex flex-col items-center space-y-2 mt-4">
 										<img src="/images/next.png" alt="Next.js" className="h-12 w-12" />
 										<span>Next.js</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/typescript.png" alt="typescript" className="h-12 w-12" />
-										<span>Typescript</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
 										<img src="/images/node.png" alt="Node.js" className="h-12 w-12" />
@@ -217,13 +217,13 @@ export default function HomePage() {
 								<div className="w-full justify-center flex">
 									<ul className="mt-4 w-3/4">
 										<li className="flex">
-											<span>📈</span>
+											<span>🏈</span>
 											<p className="pl-3">
 												Developed a complex algorithm to predict the point differential in NFL games
 											</p>
 										</li>
 										<li className="flex mt-2">
-											<span>🏈</span>
+											<span>📈</span>
 											<p className="pl-3">
 												Implemented features such as game prediction, player contribution analysis,
 												and player comparison
@@ -361,20 +361,74 @@ export default function HomePage() {
 						</div>
 					</div>
 				</motion.div>
-				<motion.div 
+				<motion.div
 					variants={cardVariants}
 					initial="offscreen"
 					animate={workControl}
-					ref={workRef} id="work" className="flex justify-center flex-col mt-12 pt-10">
+					ref={workRef}
+					id="work"
+					className="flex justify-center flex-col mt-12 pt-10">
 					<h1 className="text-5xl font-semibold text-center mt-8">Work Experience</h1>
 
 					<div className="flex flex-col items-center">
 						<div className="card shadow-lg mt-12 w-5/6">
 							<div className="card-body flex flex-col">
 								<h1 className="text-2xl font-semibold text-center">Tofu (startup)</h1>
-								<p className="text-lg text-center font-medium">Full stack developer, intern</p>
+								<p className="text-xl text-center font-medium">Full stack developer, intern</p>
+								<p className="text-lg text-center font-normal text-gray-600 italic">
+									Summer 2023
+								</p>
+
+								<div className="flex justify-center space-x-2 flex-wrap p-0 mt-3 mb-2">
+									<div className="badge bg-gray-300 font-medium p-3 mt-1">Python</div>
+									<div className="badge bg-gray-300 font-medium p-3 mt-1">Django</div>
+									<div className="badge bg-gray-300 font-medium p-3 mt-1">DjangoORM</div>
+									<div className="badge bg-gray-300 font-medium p-3 mt-1">MVT Architecture</div>
+									<div className="badge bg-gray-300 font-medium p-3 mt-1">BootstrapCSS</div>
+									<div className="badge bg-gray-300 font-medium p-3 mt-1">Jira</div>
+								</div>
+
+								<div className="w-full justify-center flex mb-2">
+									<ul className="mt-4 w-3/4">
+										<li className="flex">
+											<span>🚀</span>
+											<p className="pl-3">
+												Spearheaded a complete redesign of the UI, focusing on user-friendly design
+												and intuitive navigation.
+											</p>
+										</li>
+										<li className="flex mt-2">
+											<span>📈</span>
+											<p className="pl-3">
+												Achieved ~20% decrease in load times through optimized backend rendering and
+												code restructuring
+											</p>
+										</li>
+										<li className="flex mt-2">
+											<span>💻</span>
+											<p className="pl-3">
+												Successfully implemented and launched numerous valuable features
+											</p>
+										</li>
+										<li className="flex mt-2">
+											<span>💡</span>
+											<p className="pl-3">
+												Proactively solicited feedback from users and team members, ensuring
+												continuous improvement and user satisfaction
+											</p>
+										</li>
+										<li className="flex mt-2">
+											<span>🌐</span>
+											<p className="pl-3">
+												Constantly sought out leadership opportunities, guiding project direction
+												and fostering team collaboration
+											</p>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
+
 						<div className="card shadow-lg w-5/6">
 							<div className="card-body flex flex-col">
 								<div>
@@ -382,9 +436,12 @@ export default function HomePage() {
 								</div>
 								<div>
 									<p className="text-lg text-center font-medium">Founder, CEO</p>
+									<p className="text-lg text-center font-normal text-gray-600 italic mt-2">
+										Summer 2020, 2022
+									</p>
 								</div>
 
-								<div className="w-full justify-center flex">
+								<div className="w-full justify-center flex mb-2">
 									<ul className="mt-4 w-3/4">
 										<li className="flex">
 											<span>🪵</span>
@@ -416,7 +473,9 @@ export default function HomePage() {
 					variants={cardVariants}
 					initial="offscreen"
 					animate={contactControl}
-					ref={contactRef} id="contact" className="flex justify-center items-center flex-col mt-12 pt-10">
+					ref={contactRef}
+					id="contact"
+					className="flex justify-center items-center flex-col mt-12 pt-10">
 					<h1 className="text-5xl font-semibold text-center mt-8">Get in Touch!</h1>
 					<div className="card shadow-lg flex w-1/2">
 						<div className="card-body flex flex-col items-center">
