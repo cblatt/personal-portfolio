@@ -26,12 +26,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 								</li>
 								<li>
 									<Link href="/" className="text-base-900 font-medium hover:text-base-700">
-										Home
+										Projects
 									</Link>
 								</li>
 								<li>
 									<Link href="/" className="text-base-900 font-medium hover:text-base-700">
-										Home
+										Work Experience
+									</Link>
+								</li>
+								<li>
+									<Link href="/" className="text-base-900 font-medium hover:text-base-700">
+										Contact Me
 									</Link>
 								</li>
 							</ul>

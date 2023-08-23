@@ -6,17 +6,16 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  font-family: 'Rubik', sans-serif;
     padding: 0 2rem;
 }
 .background-image {
   content: '';
-  position: fixed;  /* This ensures the image remains in the same position */
+  position: absolute;  /* Changed from fixed to absolute */
   top: 0;           /* Aligns to the top of the viewport */
   left: 0;          /* Aligns to the left of the viewport */
   right: 0;         /* Stretches the container to the right side of the viewport */
-  height: 300px;    /* Adjust this value for the desired height */
+  height: 250px;    /* Adjust this value for the desired height */
   background-image: url('/images/background-image.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,7 +27,43 @@ body {
   background-color: rgba(255, 255, 0, 0.7); /* Yellow with 70% opacity */
   box-decoration-break: clone; /* Allows the background to span across line breaks */
   padding: 0.1em 0.2em;
-  
 }
+
+
+#highlight {
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  background-color: #F2BB05;
+  height: 40px; 
+  width: 0%;
+  transition: width 0.5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#item:hover #highlight{
+  /* hardcoded */
+  width: 362px; 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;  /* set initial opacity to 0 */
+}
+
+
 
 
