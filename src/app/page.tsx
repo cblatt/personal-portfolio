@@ -1,8 +1,87 @@
+'use client'
+
+import ContactForm from "./components/contactform";
+import Link from "next/link";
+
+import { motion, useAnimation, Variants } from "framer-motion";
+
+
+import { useInView } from "react-intersection-observer";
+
+import { useEffect, useState } from "react";
+
+const cardVariants: Variants = {
+	offscreen: {
+		y: 300,
+		opacity: 0,
+	},
+	onscreen: {
+		y: 0,
+		rotate: 0,
+		opacity: 1,
+		transition: {
+			type: "spring",
+			bounce: 0.4,
+			duration: 2,
+		},
+	},
+};
+
+
 
 
 export default function HomePage() {
+
+	const [hasAnimatedSkills, setHasAnimatedSkills] = useState(false);
+	const [hasAnimatedProjects, setHasAnimatedProjects] = useState(false);
+	const [hasAnimatedWork, setHasAnimatedWork] = useState(false);
+	const [hasAnimatedContact, setHasAnimatedContact] = useState(false);
+
+	const skillsControl = useAnimation();
+	const [skillsRef, skillsInView] = useInView();
+
+	const projectsControl = useAnimation();
+	const [projectsRef, projectsInView] = useInView();
+
+	const workControl = useAnimation();
+	const [workRef, workInView] = useInView();
+
+	const contactControl = useAnimation();
+	const [contactRef, contactInView] = useInView();
+
+	useEffect(() => {
+		if (skillsInView && !hasAnimatedSkills) {
+			skillsControl.start("onscreen");
+			setHasAnimatedSkills(true);
+		}
+	}, [skillsControl, skillsInView, hasAnimatedSkills]);
+
+	useEffect(() => {
+		if (projectsInView && !hasAnimatedProjects) {
+			projectsControl.start("onscreen");
+			setHasAnimatedProjects(true);
+		}
+	}, [projectsControl, projectsInView, hasAnimatedProjects]);
+
+	useEffect(() => {
+		if (workInView && !hasAnimatedWork) {
+			workControl.start("onscreen");
+			setHasAnimatedWork(true);
+		}
+	}, [workControl, workInView, hasAnimatedWork]);
+
+	useEffect(() => {
+		if (contactInView && !hasAnimatedContact) {
+			contactControl.start("onscreen");
+			setHasAnimatedContact(true);
+		}
+	}, [contactControl, contactInView, hasAnimatedContact]);
+
+	
+
+
 	return (
-		<div className="mb-12 fade-in-up">
+		<div className="mb-12 ">
 			<div className="flex justify-center flex-col">
 				<div className="avatar px-5 flex justify-center mt-6">
 					<div className="w-36 rounded-full relative">
@@ -10,23 +89,29 @@ export default function HomePage() {
 					</div>
 				</div>
 
-				<div className="flex justify-center flex-col mt-12">
-					<h1 className="text-5xl font-semibold text-center mt-8">
-						Hello! I'm Cameron Blatt
-					</h1>
+				<div id="home" className="flex justify-center flex-col mt-12">
+					<h1 className="text-5xl font-semibold text-center mt-8">Hello! I'm Cameron Blatt</h1>
 					<div className="text-xl text-center mt-6">
 						Passionate and driven Software Engineering Student in my final year at Western
 						University <strong>(3.9 GPA)</strong>
 					</div>
 
-					<div className="flex justify-center mt-8">
-						<button className="btn btn-lg hover:-translate-y-1 justify-center btn-info text-white">
+					<div className="flex justify-center mt-12">
+						<Link
+							className="btn btn-lg hover:-translate-y-1 justify-center btn-info text-white"
+							href="#contact">
 							Contact Me!
-						</button>
+						</Link>
 					</div>
 				</div>
 
-				<div className="flex justify-center flex-col mt-12 pt-10">
+				<motion.div
+					variants={cardVariants}
+					initial="offscreen"
+					animate={skillsControl}
+					ref={skillsRef}
+					id="skills"
+					className="flex justify-center flex-col mt-12 pt-10">
 					<h1 className="text-5xl font-semibold text-center mt-8">Skills</h1>
 
 					<div className="flex flex-col items-center">
@@ -70,6 +155,10 @@ export default function HomePage() {
 										<span>Express.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
+										<img src="/images/nest.png" alt="Nest.js" className="h-12 w-12" />
+										<span>Nest.js</span>
+									</div>
+									<div className="flex flex-col items-center space-y-2 mt-4">
 										<img src="/images/sql.png" alt="SQL" className="h-12 w-12" />
 										<span>SQL</span>
 									</div>
@@ -101,9 +190,15 @@ export default function HomePage() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className="flex justify-center flex-col mt-12 pt-10">
+				<motion.div
+					variants={cardVariants}
+					initial="offscreen"
+					animate={projectsControl}
+					ref={projectsRef}
+					id="projects"
+					className="flex justify-center flex-col mt-12 pt-10">
 					<h1 className="text-5xl font-semibold text-center mt-8">Projects</h1>
 
 					<div className="flex justify-center space-x-5">
@@ -265,8 +360,12 @@ export default function HomePage() {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="flex justify-center flex-col mt-12 pt-10">
+				</motion.div>
+				<motion.div 
+					variants={cardVariants}
+					initial="offscreen"
+					animate={workControl}
+					ref={workRef} id="work" className="flex justify-center flex-col mt-12 pt-10">
 					<h1 className="text-5xl font-semibold text-center mt-8">Work Experience</h1>
 
 					<div className="flex flex-col items-center">
@@ -312,7 +411,19 @@ export default function HomePage() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</motion.div>
+				<motion.div
+					variants={cardVariants}
+					initial="offscreen"
+					animate={contactControl}
+					ref={contactRef} id="contact" className="flex justify-center items-center flex-col mt-12 pt-10">
+					<h1 className="text-5xl font-semibold text-center mt-8">Get in Touch!</h1>
+					<div className="card shadow-lg flex w-1/2">
+						<div className="card-body flex flex-col items-center">
+							<ContactForm />
+						</div>
+					</div>
+				</motion.div>
 			</div>
 		</div>
 	);
