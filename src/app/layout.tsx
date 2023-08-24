@@ -2,8 +2,16 @@ import Link from "next/link";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import CamBot from "./components/cambot";
 
 const inter = Inter({ subsets: ["latin"] });
+
+declare namespace JSX {
+	interface IntrinsicElements {
+		"df-messenger": any;
+	}
+}
+
 
 export const metadata: Metadata = {
 	title: "Cameron Blatt",
@@ -51,6 +59,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 					{children}
 				</main>
+				<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+				<CamBot />
 			</body>
 		</html>
 	);

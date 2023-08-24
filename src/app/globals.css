@@ -69,6 +69,15 @@ body {
     opacity: 0;  /* set initial opacity to 0 */
 }
 
+df-messenger {
+   --df-messenger-bot-message: #979eb7;
+   --df-messenger-button-titlebar-color: rgb(27, 110, 255);
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: rgb(27, 110, 255);
+  }
+
 
 
 

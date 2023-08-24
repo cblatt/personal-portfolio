@@ -211,8 +211,12 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Database Management</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/sql.png" alt="SQL" className="h-12 w-12" />
-										<span>SQL</span>
+										<img src="/images/mysql.png" alt="MySQL" className="h-12 w-12" />
+										<span>MySQL</span>
+									</div>
+									<div className="flex flex-col items-center space-y-2 mt-4">
+										<img src="/images/postgresql.png" alt="PostgreSQL" className="h-12 w-12" />
+										<span>PostgreSQL</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
 										<img src="/images/firebase.png" alt="Firebase" className="h-12 w-12" />
@@ -549,6 +553,7 @@ export default function HomePage() {
 					</div>
 				</motion.div>
 			</div>
+			
 		</div>
 	);
 }
