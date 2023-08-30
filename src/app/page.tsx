@@ -104,8 +104,8 @@ export default function HomePage() {
 					<div id="home" className="flex justify-center flex-col mt-12">
 						<h1 className="text-5xl font-semibold text-center mt-8">Hello! I'm Cameron Blatt</h1>
 						<div className="text-xl text-center mt-6">
-							Passionate and driven <strong>Software Engineer</strong> in my final year at Western
-							University <strong>(3.9 GPA)</strong>
+							Passionate and driven <strong>Software Engineering Student</strong> in my final year at Western
+							University
 						</div>
 
 						<div className="flex justify-center mt-12">
