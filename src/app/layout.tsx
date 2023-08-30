@@ -46,13 +46,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 								target="_blank"
 								href="https://www.linkedin.com/in/cameron-blatt/"
 								className="hover:scale-110 transition-transform duration-300">
-								<img src="/images/linkedin.png" alt="LinkedIn" className="h-12 w-12" />
+								<img src="https://i.imgur.com/tM6JkcT.png" alt="LinkedIn" className="h-12 w-12" />
 							</a>
 							<a
 								target="_blank"
 								href="https://github.com/cblatt"
 								className="hover:scale-110 transition-transform duration-300">
-								<img src="/images/github.png" alt="GitHub" className="h-12 w-12" />
+								<img src="https://i.imgur.com/nsJ58Es.png" alt="GitHub" className="h-12 w-12" />
 							</a>
 						</div>
 					</div>

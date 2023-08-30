@@ -133,31 +133,39 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Programming Languages</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/python.png" alt="Python" className="h-12 w-12" />
+										<img src="https://i.imgur.com/ClDSzbM.png" alt="Python" className="h-12 w-12" />
 										<span>Python</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/java.png" alt="Java" className="h-12 w-12" />
+										<img src="https://i.imgur.com/nL4pOFN.png" alt="Java" className="h-12 w-12" />
 										<span>Java</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/javascript.png" alt="Javascript" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/HgwiRD5.png"
+											alt="Javascript"
+											className="h-12 w-12"
+										/>
 										<span>Javascript</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/typescript.png" alt="Typescript" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/mgpkUpM.png"
+											alt="Typescript"
+											className="h-12 w-12"
+										/>
 										<span>Typescript</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/html.png" alt="HTML" className="h-12 w-12" />
+										<img src="https://i.imgur.com/0NZlLLw.png" alt="HTML" className="h-12 w-12" />
 										<span>HTML</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/css.png" alt="CSS" className="h-12 w-12" />
+										<img src="https://i.imgur.com/cBOC1uS.png" alt="CSS" className="h-12 w-12" />
 										<span>CSS</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/csharp.png" alt="C#" className="h-12 w-12" />
+										<img src="https://i.imgur.com/YE8OX18.png" alt="C#" className="h-12 w-12" />
 										<span>C#</span>
 									</div>
 								</div>
@@ -169,35 +177,63 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Frameworks & Libraries</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/django.png" alt="Django" className="h-12 w-12" />
+										<img src="https://i.imgur.com/UMsUtn5.png" alt="Django" className="h-12 w-12" />
 										<span>Django</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/react.png" alt="React.js" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/R1dVOlT.png"
+											alt="React.js"
+											className="h-12 w-12"
+										/>
 										<span>React.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/next.png" alt="Next.js" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/EjkWRs9.png"
+											alt="Next.js"
+											className="h-12 w-12"
+										/>
 										<span>Next.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/node.png" alt="Node.js" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/CXrF1eh.png"
+											alt="Node.js"
+											className="h-12 w-12"
+										/>
 										<span>Node.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/express.png" alt="Express.js" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/DGOAlwz.png"
+											alt="Express.js"
+											className="h-12 w-12"
+										/>
 										<span>Express.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/nest.png" alt="Nest.js" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/W6S5K3r.png"
+											alt="Nest.js"
+											className="h-12 w-12"
+										/>
 										<span>Nest.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/bootstrap.png" alt="Bootstrap CSS" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/G8lWkg2.png"
+											alt="Bootstrap CSS"
+											className="h-12 w-12"
+										/>
 										<span>Bootstrap</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/tailwind.png" alt="Tailwind CSS" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/czu26Cz.png"
+											alt="Tailwind CSS"
+											className="h-12 w-12"
+										/>
 										<span>Tailwind</span>
 									</div>
 								</div>
@@ -211,15 +247,23 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Database Management</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/mysql.png" alt="MySQL" className="h-12 w-12" />
+										<img src="https://i.imgur.com/MNRVecg.png" alt="MySQL" className="h-12 w-12" />
 										<span>MySQL</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/postgresql.png" alt="PostgreSQL" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/9qljWlz.png"
+											alt="PostgreSQL"
+											className="h-12 w-12"
+										/>
 										<span>PostgreSQL</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/firebase.png" alt="Firebase" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/oyTDiDY.png"
+											alt="Firebase"
+											className="h-12 w-12"
+										/>
 										<span>Firebase</span>
 									</div>
 								</div>
@@ -231,15 +275,19 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Development Tools</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/github.png" alt="GitHub" className="h-12 w-12" />
+										<img src="https://i.imgur.com/nsJ58Es.png" alt="GitHub" className="h-12 w-12" />
 										<span>GitHub</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/jira.png" alt="Jira" className="h-12 w-12" />
+										<img src="https://i.imgur.com/bZe1WAU.png" alt="Jira" className="h-12 w-12" />
 										<span>Jira</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="/images/confluence.png" alt="Confluence" className="h-12 w-12" />
+										<img
+											src="https://i.imgur.com/Awqjh6K.png"
+											alt="Confluence"
+											className="h-12 w-12"
+										/>
 										<span>Confluence</span>
 									</div>
 								</div>
@@ -553,7 +601,6 @@ export default function HomePage() {
 					</div>
 				</motion.div>
 			</div>
-			
 		</div>
 	);
 }
