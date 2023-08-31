@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import CamBot from "./components/cambot";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,13 +33,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 								target="_blank"
 								href="https://www.linkedin.com/in/cameron-blatt/"
 								className="hover:scale-110 transition-transform duration-300">
-								<img src="https://i.imgur.com/tM6JkcT.png" alt="LinkedIn" className="h-12 w-12" />
+								<Image
+									src="https://i.imgur.com/tM6JkcT.png"
+									alt="LinkedIn"
+									width="48"
+									height="48"></Image>
 							</a>
 							<a
 								target="_blank"
 								href="https://github.com/cblatt"
 								className="hover:scale-110 transition-transform duration-300">
-								<img src="https://i.imgur.com/nsJ58Es.png" alt="GitHub" className="h-12 w-12" />
+								<Image src="https://i.imgur.com/nsJ58Es.png" alt="GitHub" width="48" height="48" />
 							</a>
 						</div>
 						<nav className="flex-1 flex justify-center z-10">
@@ -46,12 +51,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 								<Link className="btn bg-white btn-outline" href="#skills">
 									Skills
 								</Link>
-								<Link className="btn bg-white btn-outline" href="#projects">
-									Projects
-								</Link>
 								<Link className="btn bg-white btn-outline" href="#work">
 									Work Experience
 								</Link>
+								<Link className="btn bg-white btn-outline" href="#projects">
+									Projects
+								</Link>
+
 								<Link className="btn bg-white btn-outline" href="#contact">
 									Contact Me
 								</Link>
@@ -63,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					</div>
 					{children}
 				</main>
-				<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+				<script async src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 				<CamBot />
 			</body>
 		</html>

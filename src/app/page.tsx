@@ -10,6 +10,8 @@ import { useInView } from "react-intersection-observer";
 
 import { use, useEffect, useState } from "react";
 
+import Image from "next/image";
+
 const cardVariants: Variants = {
 	offscreen: {
 		y: 300,
@@ -97,12 +99,22 @@ export default function HomePage() {
 				<motion.div variants={cardVariants} initial="offscreen" animate={homeControl} ref={homeRef}>
 					<div className="avatar px-5 flex justify-center mt-6">
 						<div className="w-36 rounded-full relative">
-							<img src="/images/headshot4.jpg" alt="Cameron Blatt" />
+							<div className="w-36 rounded-full relative">
+								<Image
+									src="https://i.imgur.com/dg5mLjL.jpg"
+									alt="Cameron Blatt"
+									width={144}
+									height={144}
+									quality={100}
+								/>
+							</div>
 						</div>
 					</div>
 
 					<div id="home" className="flex justify-center flex-col mt-12">
-						<h1 className="text-5xl font-semibold text-center mt-8">Hello! I'm Cameron Blatt</h1>
+						<h1 className="text-5xl font-semibold text-center mt-8">
+							Hello! I&apos;m Cameron Blatt
+						</h1>
 						<div className="text-xl text-center mt-6">
 							Passionate and driven <strong>Software Engineering Student</strong> in my final year
 							at Western University (graduating in May 2024)
@@ -139,39 +151,56 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Programming Languages</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/ClDSzbM.png" alt="Python" className="h-12 w-12" />
+										<Image
+											src="https://i.imgur.com/ClDSzbM.png"
+											alt="Python"
+											width={48}
+											height={48}
+										/>
 										<span>Python</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/nL4pOFN.png" alt="Java" className="h-12 w-12" />
+										<Image
+											src="https://i.imgur.com/nL4pOFN.png"
+											alt="Java"
+											width={48}
+											height={48}
+										/>
 										<span>Java</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/HgwiRD5.png"
 											alt="Javascript"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Javascript</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/mgpkUpM.png"
 											alt="Typescript"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Typescript</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/0NZlLLw.png" alt="HTML" className="h-12 w-12" />
+										<Image
+											src="https://i.imgur.com/0NZlLLw.png"
+											alt="HTML"
+											width={48}
+											height={48}
+										/>
 										<span>HTML</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/cBOC1uS.png" alt="CSS" className="h-12 w-12" />
+										<Image src="https://i.imgur.com/cBOC1uS.png" alt="CSS" width={48} height={48} />
 										<span>CSS</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/YE8OX18.png" alt="C#" className="h-12 w-12" />
+										<Image src="https://i.imgur.com/YE8OX18.png" alt="C#" width={48} height={48} />
 										<span>C#</span>
 									</div>
 								</div>
@@ -183,62 +212,74 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Frameworks & Libraries</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/UMsUtn5.png" alt="Django" className="h-12 w-12" />
+										<Image
+											src="https://i.imgur.com/UMsUtn5.png"
+											alt="Django"
+											width={48}
+											height={48}
+										/>
 										<span>Django</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/R1dVOlT.png"
 											alt="React.js"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>React.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/EjkWRs9.png"
 											alt="Next.js"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Next.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/CXrF1eh.png"
 											alt="Node.js"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Node.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/DGOAlwz.png"
 											alt="Express.js"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Express.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/W6S5K3r.png"
 											alt="Nest.js"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Nest.js</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/G8lWkg2.png"
 											alt="Bootstrap CSS"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Bootstrap</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/czu26Cz.png"
 											alt="Tailwind CSS"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Tailwind</span>
 									</div>
@@ -253,22 +294,29 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Database Management</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/MNRVecg.png" alt="MySQL" className="h-12 w-12" />
+										<Image
+											src="https://i.imgur.com/MNRVecg.png"
+											alt="MySQL"
+											width={48}
+											height={48}
+										/>
 										<span>MySQL</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/9qljWlz.png"
 											alt="PostgreSQL"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>PostgreSQL</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/oyTDiDY.png"
 											alt="Firebase"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Firebase</span>
 									</div>
@@ -281,18 +329,29 @@ export default function HomePage() {
 								<h2 className="text-2xl font-semibold mb-6">Development Tools</h2>
 								<div className="flex flex-wrap justify-center space-x-10">
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/nsJ58Es.png" alt="GitHub" className="h-12 w-12" />
+										<Image
+											src="https://i.imgur.com/nsJ58Es.png"
+											alt="GitHub"
+											width={48}
+											height={48}
+										/>
 										<span>GitHub</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img src="https://i.imgur.com/bZe1WAU.png" alt="Jira" className="h-12 w-12" />
+										<Image
+											src="https://i.imgur.com/bZe1WAU.png"
+											alt="Jira"
+											width={48}
+											height={48}
+										/>
 										<span>Jira</span>
 									</div>
 									<div className="flex flex-col items-center space-y-2 mt-4">
-										<img
+										<Image
 											src="https://i.imgur.com/Awqjh6K.png"
 											alt="Confluence"
-											className="h-12 w-12"
+											width={48}
+											height={48}
 										/>
 										<span>Confluence</span>
 									</div>
@@ -302,6 +361,116 @@ export default function HomePage() {
 					</div>
 				</motion.div>
 
+				<motion.div
+					variants={cardVariants}
+					initial="offscreen"
+					animate={workControl}
+					ref={workRef}
+					id="work"
+					className="flex justify-center flex-col mt-12 pt-10">
+					<h1 className="text-5xl font-semibold text-center mt-8">Work Experience</h1>
+
+					<div className="flex flex-col items-center">
+						<div className="card shadow-lg mt-12 w-5/6 hover:-translate-y-2 transition-transform duration-300">
+							<a href="https://www.hiretofu.com/" target="_blank">
+								<div className="card-body flex flex-col">
+									<h1 className="text-2xl font-semibold text-center">Tofu (startup)</h1>
+									<p className="text-xl text-center font-medium">Full stack developer, intern</p>
+									<p className="text-lg text-center font-normal text-gray-600 italic">
+										Summer 2023
+									</p>
+
+									<div className="flex justify-center space-x-2 flex-wrap p-0 mt-3 mb-2">
+										<div className="badge bg-gray-300 font-medium p-3 mt-1">Python</div>
+										<div className="badge bg-gray-300 font-medium p-3 mt-1">Django</div>
+										<div className="badge bg-gray-300 font-medium p-3 mt-1">DjangoORM</div>
+										<div className="badge bg-gray-300 font-medium p-3 mt-1">MVT Architecture</div>
+										<div className="badge bg-gray-300 font-medium p-3 mt-1">BootstrapCSS</div>
+										<div className="badge bg-gray-300 font-medium p-3 mt-1">Jira</div>
+									</div>
+
+									<div className="w-full justify-center flex mb-2">
+										<ul className="mt-4 w-3/4">
+											<li className="flex">
+												<span>🚀</span>
+												<p className="pl-3">
+													Spearheaded a complete redesign of the UI, focusing on user-friendly
+													design and intuitive navigation.
+												</p>
+											</li>
+											<li className="flex mt-2">
+												<span>📈</span>
+												<p className="pl-3">
+													Achieved ~20% decrease in load times through optimized backend rendering
+													and code restructuring
+												</p>
+											</li>
+											<li className="flex mt-2">
+												<span>💻</span>
+												<p className="pl-3">
+													Successfully implemented and launched numerous valuable features
+												</p>
+											</li>
+											<li className="flex mt-2">
+												<span>💡</span>
+												<p className="pl-3">
+													Proactively solicited feedback from users and team members, ensuring
+													continuous improvement and user satisfaction
+												</p>
+											</li>
+											<li className="flex mt-2">
+												<span>🌐</span>
+												<p className="pl-3">
+													Constantly sought out leadership opportunities, guiding project direction
+													and fostering team collaboration
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div className="card shadow-lg w-5/6">
+							<div className="card-body flex flex-col">
+								<div>
+									<h1 className="text-2xl font-semibold text-center">Decks & Fences</h1>
+								</div>
+								<div>
+									<p className="text-lg text-center font-medium">Founder, CEO</p>
+									<p className="text-lg text-center font-normal text-gray-600 italic mt-2">
+										Summer 2020, 2022
+									</p>
+								</div>
+
+								<div className="w-full justify-center flex mb-2">
+									<ul className="mt-4 w-3/4">
+										<li className="flex">
+											<span>🪵</span>
+											<p className="pl-3">
+												Owner and operator of outdoor pressure washing, sanding and painting company
+											</p>
+										</li>
+										<li className="flex mt-2">
+											<span>📈</span>
+											<p className="pl-3">
+												Generated over $15,000 in revenue through effective business operations and
+												client satisfaction
+											</p>
+										</li>
+										<li className="flex mt-2">
+											<span>💼</span>
+											<p className="pl-3">
+												Demonstrated strong entrepreneurial skills and adaptability in managing a
+												small business
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</motion.div>
 				<motion.div
 					variants={cardVariants}
 					initial="offscreen"
@@ -433,7 +602,7 @@ export default function HomePage() {
 														<span>🎸</span>
 														<p className="pl-3">
 															Implemented a playlist review system, allowing users to rate and
-															comment on friends' playlists
+															comment on friends&apos; playlists
 														</p>
 													</li>
 												</ul>
@@ -478,116 +647,6 @@ export default function HomePage() {
 										</div>
 									</div>
 								</a>
-							</div>
-						</div>
-					</div>
-				</motion.div>
-				<motion.div
-					variants={cardVariants}
-					initial="offscreen"
-					animate={workControl}
-					ref={workRef}
-					id="work"
-					className="flex justify-center flex-col mt-12 pt-10">
-					<h1 className="text-5xl font-semibold text-center mt-8">Work Experience</h1>
-
-					<div className="flex flex-col items-center">
-						<div className="card shadow-lg mt-12 w-5/6 hover:-translate-y-2 transition-transform duration-300">
-							<a href="https://www.hiretofu.com/" target="_blank">
-								<div className="card-body flex flex-col">
-									<h1 className="text-2xl font-semibold text-center">Tofu (startup)</h1>
-									<p className="text-xl text-center font-medium">Full stack developer, intern</p>
-									<p className="text-lg text-center font-normal text-gray-600 italic">
-										Summer 2023
-									</p>
-
-									<div className="flex justify-center space-x-2 flex-wrap p-0 mt-3 mb-2">
-										<div className="badge bg-gray-300 font-medium p-3 mt-1">Python</div>
-										<div className="badge bg-gray-300 font-medium p-3 mt-1">Django</div>
-										<div className="badge bg-gray-300 font-medium p-3 mt-1">DjangoORM</div>
-										<div className="badge bg-gray-300 font-medium p-3 mt-1">MVT Architecture</div>
-										<div className="badge bg-gray-300 font-medium p-3 mt-1">BootstrapCSS</div>
-										<div className="badge bg-gray-300 font-medium p-3 mt-1">Jira</div>
-									</div>
-
-									<div className="w-full justify-center flex mb-2">
-										<ul className="mt-4 w-3/4">
-											<li className="flex">
-												<span>🚀</span>
-												<p className="pl-3">
-													Spearheaded a complete redesign of the UI, focusing on user-friendly
-													design and intuitive navigation.
-												</p>
-											</li>
-											<li className="flex mt-2">
-												<span>📈</span>
-												<p className="pl-3">
-													Achieved ~20% decrease in load times through optimized backend rendering
-													and code restructuring
-												</p>
-											</li>
-											<li className="flex mt-2">
-												<span>💻</span>
-												<p className="pl-3">
-													Successfully implemented and launched numerous valuable features
-												</p>
-											</li>
-											<li className="flex mt-2">
-												<span>💡</span>
-												<p className="pl-3">
-													Proactively solicited feedback from users and team members, ensuring
-													continuous improvement and user satisfaction
-												</p>
-											</li>
-											<li className="flex mt-2">
-												<span>🌐</span>
-												<p className="pl-3">
-													Constantly sought out leadership opportunities, guiding project direction
-													and fostering team collaboration
-												</p>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</a>
-						</div>
-
-						<div className="card shadow-lg w-5/6">
-							<div className="card-body flex flex-col">
-								<div>
-									<h1 className="text-2xl font-semibold text-center">Decks & Fences</h1>
-								</div>
-								<div>
-									<p className="text-lg text-center font-medium">Founder, CEO</p>
-									<p className="text-lg text-center font-normal text-gray-600 italic mt-2">
-										Summer 2020, 2022
-									</p>
-								</div>
-
-								<div className="w-full justify-center flex mb-2">
-									<ul className="mt-4 w-3/4">
-										<li className="flex">
-											<span>🪵</span>
-											<p className="pl-3">
-												Owner and operator of outdoor pressure washing, sanding and painting company
-											</p>
-										</li>
-										<li className="flex mt-2">
-											<span>📈</span>
-											<p className="pl-3">
-												Generated over $15,000 in revenue through effective business operations and
-												client satisfaction
-											</p>
-										</li>
-										<li className="flex mt-2">
-											<span>💼</span>
-											<p className="pl-3">
-												Demonstrated strong entrepreneurial skills and adaptability in managing a
-												small business
-											</p>
-										</li>
-									</ul>
-								</div>
 							</div>
 						</div>
 					</div>
