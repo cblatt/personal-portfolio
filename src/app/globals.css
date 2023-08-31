@@ -16,21 +16,21 @@ body {
 }
 .background-image {
   content: '';
-  position: absolute;  /* Changed from fixed to absolute */
-  top: 0;           /* Aligns to the top of the viewport */
-  left: 0;          /* Aligns to the left of the viewport */
-  right: 0;         /* Stretches the container to the right side of the viewport */
-  height: 250px;    /* Adjust this value for the desired height */
+  position: absolute;  
+  top: 0;           
+  left: 0;          
+  right: 0;         
+  height: 250px;    
   background-image: url('/images/background-image.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  z-index: -1;      /* Ensures the image remains behind other content */
+  z-index: -1;      
 }
 
 .highlighter-effect {
-  background-color: rgba(255, 255, 0, 0.7); /* Yellow with 70% opacity */
-  box-decoration-break: clone; /* Allows the background to span across line breaks */
+  background-color: rgba(255, 255, 0, 0.7); 
+  box-decoration-break: clone; 
   padding: 0.1em 0.2em;
 }
 
@@ -66,7 +66,7 @@ body {
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    opacity: 0;  /* set initial opacity to 0 */
+    opacity: 0;
 }
 
 df-messenger {
@@ -77,6 +77,12 @@ df-messenger {
    --df-messenger-send-icon: #878fac;
    --df-messenger-user-message: rgb(27, 110, 255);
   }
+
+.employment-badge {
+    font-size: 1.2rem; 
+    padding: 22px 22px; 
+    border-radius: 30px;
+}
 
 
 

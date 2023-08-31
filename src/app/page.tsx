@@ -104,11 +104,17 @@ export default function HomePage() {
 					<div id="home" className="flex justify-center flex-col mt-12">
 						<h1 className="text-5xl font-semibold text-center mt-8">Hello! I'm Cameron Blatt</h1>
 						<div className="text-xl text-center mt-6">
-							Passionate and driven <strong>Software Engineering Student</strong> in my final year at Western
-							University
+							Passionate and driven <strong>Software Engineering Student</strong> in my final year
+							at Western University (graduating in May 2024)
 						</div>
 
-						<div className="flex justify-center mt-12">
+						<div className="flex justify-center mt-7">
+							<div className="badge badge-lg badge-success font-medium text-white employment-badge">
+								Seeking full-time employment
+							</div>
+						</div>
+
+						<div className="flex justify-center mt-8">
 							<Link
 								className="btn btn-lg hover:-translate-y-1 justify-center btn-info text-white"
 								href="#contact">
