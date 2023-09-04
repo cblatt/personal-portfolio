@@ -117,12 +117,12 @@ export default function HomePage() {
 						</h1>
 						<div className="text-xl text-center mt-6">
 							Passionate and driven <strong>Software Engineering Student</strong> in my final year
-							at Western University (graduating in May 2024)
+							at Western University
 						</div>
 
 						<div className="flex justify-center mt-7">
 							<div className="badge badge-lg badge-success font-medium text-white employment-badge">
-								Seeking full-time employment
+								Seeking full-time employment upon graduation (May 2024)
 							</div>
 						</div>
 
@@ -395,7 +395,7 @@ export default function HomePage() {
 												<span>🚀</span>
 												<p className="pl-3">
 													Spearheaded a complete redesign of the UI, focusing on user-friendly
-													design and intuitive navigation.
+													design and intuitive navigation
 												</p>
 											</li>
 											<li className="flex mt-2">
