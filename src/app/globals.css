@@ -84,6 +84,22 @@ df-messenger {
     border-radius: 30px;
 }
 
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-item img {
+    min-height: 48px;
+}
+.image-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 

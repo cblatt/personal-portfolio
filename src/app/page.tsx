@@ -120,12 +120,6 @@ export default function HomePage() {
 							at Western University
 						</div>
 
-						<div className="flex justify-center mt-7">
-							<div className="badge badge-lg badge-success font-medium text-white employment-badge">
-								Seeking full-time employment upon graduation (May 2024)
-							</div>
-						</div>
-
 						<div className="flex justify-center mt-8">
 							<Link
 								className="btn btn-lg hover:-translate-y-1 justify-center btn-info text-white"
@@ -145,215 +139,163 @@ export default function HomePage() {
 					className="flex justify-center flex-col mt-12 pt-10">
 					<h1 className="text-5xl font-semibold text-center mt-8">Skills</h1>
 
-					<div className="flex flex-row justify-center space-x-6 mt-6">
-						<div className="card shadow-lg w-5/12">
-							<div className="card-body flex flex-col items-center">
-								<h2 className="text-2xl font-semibold mb-6">Programming Languages</h2>
-								<div className="flex flex-wrap justify-center space-x-10">
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/ClDSzbM.png"
-											alt="Python"
-											width={48}
-											height={48}
-										/>
-										<span>Python</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/nL4pOFN.png"
-											alt="Java"
-											width={48}
-											height={48}
-										/>
-										<span>Java</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/HgwiRD5.png"
-											alt="Javascript"
-											width={48}
-											height={48}
-										/>
-										<span>Javascript</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/mgpkUpM.png"
-											alt="Typescript"
-											width={48}
-											height={48}
-										/>
-										<span>Typescript</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/0NZlLLw.png"
-											alt="HTML"
-											width={48}
-											height={48}
-										/>
-										<span>HTML</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image src="https://i.imgur.com/cBOC1uS.png" alt="CSS" width={48} height={48} />
-										<span>CSS</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image src="https://i.imgur.com/YE8OX18.png" alt="C#" width={48} height={48} />
-										<span>C#</span>
+					<div className="flex justify-center">
+						<div className="flex flex-row justify-center space-x-4 mt-6 w-5/6">
+							<div className="card shadow-lg w-1/2">
+								<div className="card-body flex flex-col items-center">
+									<h2 className="text-2xl font-semibold mb-6">Programming Languages</h2>
+									<div className="flex flex-wrap justify-center space-x-10">
+										{["Python", "Java", "Javascript", "Typescript", "HTML", "CSS", "C#"].map(
+											(skill, index) => (
+												<div
+													key={index}
+													className="flex flex-col items-center space-y-2 mt-4 skill-item">
+													<div className="image-container">
+														<Image
+															src={`https://i.imgur.com/${
+																[
+																	"ClDSzbM",
+																	"nL4pOFN",
+																	"HgwiRD5",
+																	"mgpkUpM",
+																	"0NZlLLw",
+																	"cBOC1uS",
+																	"YE8OX18",
+																][index]
+															}.png`}
+															alt={skill}
+															width={48}
+															height={48}
+														/>
+													</div>
+													<span>{skill}</span>
+												</div>
+											)
+										)}
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div className="card shadow-lg w-5/12">
-							<div className="card-body flex flex-col items-center">
-								<h2 className="text-2xl font-semibold mb-6">Frameworks & Libraries</h2>
-								<div className="flex flex-wrap justify-center space-x-10">
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/UMsUtn5.png"
-											alt="Django"
-											width={48}
-											height={48}
-										/>
-										<span>Django</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/R1dVOlT.png"
-											alt="React.js"
-											width={48}
-											height={48}
-										/>
-										<span>React.js</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/EjkWRs9.png"
-											alt="Next.js"
-											width={48}
-											height={48}
-										/>
-										<span>Next.js</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/CXrF1eh.png"
-											alt="Node.js"
-											width={48}
-											height={48}
-										/>
-										<span>Node.js</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/DGOAlwz.png"
-											alt="Express.js"
-											width={48}
-											height={48}
-										/>
-										<span>Express.js</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/W6S5K3r.png"
-											alt="Nest.js"
-											width={48}
-											height={48}
-										/>
-										<span>Nest.js</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/G8lWkg2.png"
-											alt="Bootstrap CSS"
-											width={48}
-											height={48}
-										/>
-										<span>Bootstrap</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/czu26Cz.png"
-											alt="Tailwind CSS"
-											width={48}
-											height={48}
-										/>
-										<span>Tailwind</span>
+							<div className="card shadow-lg w-1/2">
+								<div className="card-body flex flex-col items-center">
+									<h2 className="text-2xl font-semibold mb-6">Frameworks & Libraries</h2>
+									<div className="flex flex-wrap justify-center space-x-10">
+										{[
+											"Django",
+											"React.js",
+											"Next.js",
+											"jQuery",
+											"Node.js",
+											"Express.js",
+											"Nest.js",
+											"Bootstrap",
+											"Tailwind",
+										].map((skill, index) => (
+											<div
+												key={index}
+												className="flex flex-col items-center space-y-2 mt-4 skill-item">
+												<div className="image-container">
+													<Image
+														src={`https://i.imgur.com/${
+															[
+																"UMsUtn5",
+																"R1dVOlT",
+																"EjkWRs9",
+																"6KdABJl",
+																"CXrF1eh",
+																"DGOAlwz",
+																"W6S5K3r",
+																"G8lWkg2",
+																"czu26Cz",
+															][index]
+														}.png`}
+														alt={skill}
+														width={48}
+														height={48}
+													/>
+												</div>
+												<span>{skill}</span>
+											</div>
+										))}
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div className="flex flex-row justify-center space-x-6 mt-6">
-						<div className="card shadow-lg w-5/12">
-							<div className="card-body flex flex-col items-center">
-								<h2 className="text-2xl font-semibold mb-6">Database Management</h2>
-								<div className="flex flex-wrap justify-center space-x-10">
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/MNRVecg.png"
-											alt="MySQL"
-											width={48}
-											height={48}
-										/>
-										<span>MySQL</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/9qljWlz.png"
-											alt="PostgreSQL"
-											width={48}
-											height={48}
-										/>
-										<span>PostgreSQL</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/oyTDiDY.png"
-											alt="Firebase"
-											width={48}
-											height={48}
-										/>
-										<span>Firebase</span>
+					<div className="flex justify-center">
+						<div className="flex flex-row justify-center space-x-4 mt-6 w-5/6">
+							<div className="card shadow-lg w-1/3">
+								<div className="card-body flex flex-col items-center">
+									<h2 className="text-2xl font-semibold mb-6">Database Management</h2>
+									<div className="flex flex-wrap justify-center space-x-10">
+										{["MySQL", "PostgreSQL", "Firebase"].map((skill, index) => (
+											<div
+												key={index}
+												className="flex flex-col items-center space-y-2 mt-4 skill-item">
+												<div className="image-container">
+													<Image
+														src={`https://i.imgur.com/${
+															["MNRVecg", "9qljWlz", "oyTDiDY"][index]
+														}.png`}
+														alt={skill}
+														width={48}
+														height={48}
+													/>
+												</div>
+												<span>{skill}</span>
+											</div>
+										))}
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div className="card shadow-lg w-5/12">
-							<div className="card-body flex flex-col items-center">
-								<h2 className="text-2xl font-semibold mb-6">Development Tools</h2>
-								<div className="flex flex-wrap justify-center space-x-10">
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/nsJ58Es.png"
-											alt="GitHub"
-											width={48}
-											height={48}
-										/>
-										<span>GitHub</span>
+							<div className="card shadow-lg w-1/3">
+								<div className="card-body flex flex-col items-center">
+									<h2 className="text-2xl font-semibold mb-6">Cloud Platforms & Services</h2>
+									<div className="flex flex-wrap justify-center space-x-10">
+										{["AWS", "GCP", "EC2", "DialogFlow"].map((skill, index) => (
+											<div
+												key={index}
+												className="flex flex-col items-center space-y-2 mt-4 skill-item">
+												<div className="image-container">
+													<Image
+														src={`https://i.imgur.com/${
+															["gJJKzFA", "37o9fga", "vXso4Ay", "nYY5iVe"][index]
+														}.png`}
+														alt={skill}
+														width={48}
+														height={48}
+													/>
+												</div>
+												<span>{skill}</span>
+											</div>
+										))}
 									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/bZe1WAU.png"
-											alt="Jira"
-											width={48}
-											height={48}
-										/>
-										<span>Jira</span>
-									</div>
-									<div className="flex flex-col items-center space-y-2 mt-4">
-										<Image
-											src="https://i.imgur.com/Awqjh6K.png"
-											alt="Confluence"
-											width={48}
-											height={48}
-										/>
-										<span>Confluence</span>
+								</div>
+							</div>
+
+							<div className="card shadow-lg w-1/3">
+								<div className="card-body flex flex-col items-center">
+									<h2 className="text-2xl font-semibold mb-6">Development Tools</h2>
+									<div className="flex flex-wrap justify-center space-x-10">
+										{["GitHub", "Jira", "Confluence"].map((skill, index) => (
+											<div
+												key={index}
+												className="flex flex-col items-center space-y-2 mt-4 skill-item">
+												<div className="image-container">
+													<Image
+														src={`https://i.imgur.com/${
+															["nsJ58Es", "bZe1WAU", "Awqjh6K"][index]
+														}.png`}
+														alt={skill}
+														width={48}
+														height={48}
+													/>
+												</div>
+												<span>{skill}</span>
+											</div>
+										))}
 									</div>
 								</div>
 							</div>
@@ -527,9 +469,7 @@ export default function HomePage() {
 					<div className="flex justify-center mt-8">
 						<div className="w-5/6 flex space-x-4">
 							<div className="card shadow-lg w-1/3 hover:-translate-y-2 transition-transform duration-300">
-								<a
-									href="https://github.com/ShaimaaAliECE/se3350_groupproject-se3350-team-34"
-									target="_blank">
+								<a href="https://github.com/cblatt/OutlineMaster" target="_blank">
 									<div className="card-body p-0">
 										<div className="card-body flex flex-col">
 											<div>
