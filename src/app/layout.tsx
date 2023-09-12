@@ -64,12 +64,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 							</div>
 						</nav>
 						<div className="flex-shrink-0 me-2">
-							<a className="btn btn-neutral text-white">Resume</a>
+							<a
+								href="/Cameron-Blatt-Resume.pdf"
+								className="btn btn-neutral text-white"
+								target="_blank"
+								rel="noopener noreferrer">
+								Resume
+							</a>
 						</div>
 					</div>
 					{children}
 				</main>
-				<script async src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+				<script
+					async
+					src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 				<CamBot />
 			</body>
 		</html>

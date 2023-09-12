@@ -317,7 +317,7 @@ export default function HomePage() {
 							<a href="https://www.hiretofu.com/" target="_blank">
 								<div className="card-body flex flex-col">
 									<h1 className="text-2xl font-semibold text-center">Tofu (startup)</h1>
-									<p className="text-xl text-center font-medium">Full stack developer, intern</p>
+									<p className="text-xl text-center font-medium">Software engineering intern</p>
 									<p className="text-lg text-center font-normal text-gray-600 italic">
 										Summer 2023
 									</p>
