@@ -336,35 +336,45 @@ export default function HomePage() {
 											<li className="flex">
 												<span>🚀</span>
 												<p className="pl-3">
-													Spearheaded a complete redesign of the UI, focusing on user-friendly
-													design and intuitive navigation
+													Spearheaded a complete UI redesign, utilizing Django’s template engine and
+													jQuery for dynamic, responsive web pages
 												</p>
 											</li>
 											<li className="flex mt-2">
 												<span>📈</span>
 												<p className="pl-3">
-													Achieved ~20% decrease in load times through optimized backend rendering
-													and code restructuring
+													Overhauled data table handling, utilizing Python and Django ORM for
+													backend rendering and AJAX for frontend retrieval, achieving considerable
+													improvements in page load times and overall user experience
 												</p>
 											</li>
 											<li className="flex mt-2">
 												<span>💻</span>
 												<p className="pl-3">
-													Successfully implemented and launched numerous valuable features
+													Created a scoring algorithm to quantify candidate-job fit, providing
+													recruiters with data-driven candidate evaluations
 												</p>
 											</li>
 											<li className="flex mt-2">
-												<span>💡</span>
+												<span>📫</span>
 												<p className="pl-3">
-													Proactively solicited feedback from users and team members, ensuring
-													continuous improvement and user satisfaction
+													Developed an SMTP email feature with editable templates, enabling
+													recruiters to contact candidates directly from Tofu
 												</p>
 											</li>
 											<li className="flex mt-2">
 												<span>🌐</span>
 												<p className="pl-3">
-													Constantly sought out leadership opportunities, guiding project direction
-													and fostering team collaboration
+													Launched approximately 10 additional features, integrating RESTful
+													endpoints for efficient data exchange, and ensuring reliability using
+													Django’s testing framework
+												</p>
+											</li>
+											<li className="flex mt-2">
+												<span>💡</span>
+												<p className="pl-3">
+													Collaborated with a team of 4, frequently leading Agile stand-ups and
+													planning sessions
 												</p>
 											</li>
 										</ul>
@@ -390,21 +400,27 @@ export default function HomePage() {
 										<li className="flex">
 											<span>🪵</span>
 											<p className="pl-3">
-												Owner and operator of outdoor pressure washing, sanding and painting company
+												Founded and operated a home exterior maintenance company, providing services
+												to 60+ unique clients
 											</p>
 										</li>
 										<li className="flex mt-2">
 											<span>📈</span>
 											<p className="pl-3">
-												Generated over $15,000 in revenue through effective business operations and
-												client satisfaction
+												Demonstrated strong entrepreneurial and problem-solving skills
 											</p>
 										</li>
 										<li className="flex mt-2">
 											<span>💼</span>
 											<p className="pl-3">
-												Demonstrated strong entrepreneurial skills and adaptability in managing a
-												small business
+												Orchestrated project timelines and resource allocation, enhancing
+												operational efficiency
+											</p>
+										</li>
+										<li className="flex mt-2">
+											<span>📋</span>
+											<p className="pl-3">
+												Led a team of 4, ensuring optimal task delegation and workflow efficiency
 											</p>
 										</li>
 									</ul>
@@ -441,22 +457,22 @@ export default function HomePage() {
 											<li className="flex">
 												<span>🏈</span>
 												<p className="pl-3">
-													Developed a complex algorithm to predict the point differential in NFL
-													games
+													Created a full-stack web application to aid in NFL betting, utilizing
+													React.js for frontend and Node.js for backend
 												</p>
 											</li>
 											<li className="flex mt-2">
 												<span>📈</span>
 												<p className="pl-3">
-													Implemented features such as game prediction, player contribution
-													analysis, and player comparison
+													Developed a complex algorithm to predict the point differential in NFL
+													games
 												</p>
 											</li>
 											<li className="flex mt-2">
 												<span>🛠️</span>
 												<p className="pl-3">
-													Created a REST API and utilized SQL to efficiently retrieve and manipulate
-													large CSV files of NFL data
+													Implemented features such as game prediction and player comparison, using
+													MySQL for data management
 												</p>
 											</li>
 										</ul>
@@ -492,15 +508,16 @@ export default function HomePage() {
 													<li className="flex">
 														<span>📝</span>
 														<p className="pl-3">
-															Developed features such as creating, editing, and forwarding course
-															outlines
+															Developed features such as course outline creation and modification,
+															utilizing PostgreSQL for data management
 														</p>
 													</li>
 													<li className="flex mt-2">
 														<span>💬</span>
 														<p className="pl-3">
-															Implemented review system to allow reviewers to suggest changes and
-															modify course outlines
+															Implemented a robust review system allowing department chairs to
+															suggest modifications and return updated outlines to professors for
+															further refinements
 														</p>
 													</li>
 												</ul>
@@ -535,14 +552,15 @@ export default function HomePage() {
 														<span>🎵</span>
 														<p className="pl-3">
 															Developed features such as track search, playlist creation, and music
-															sharing
+															sharing, utilizing Node.js for backend queries and MySQL for database
+															management
 														</p>
 													</li>
 													<li className="flex mt-2">
 														<span>🎸</span>
 														<p className="pl-3">
-															Implemented a playlist review system, allowing users to rate and
-															comment on friends&apos; playlists
+															Implemented playlist review system, allowing users to rate and comment
+															on friends’ playlists
 														</p>
 													</li>
 												</ul>
