@@ -116,7 +116,7 @@ export default function HomePage() {
 							Hello! I&apos;m Cameron Blatt
 						</h1>
 						<div className="text-xl text-center mt-6">
-							Passionate and driven <strong>Software Engineering Student</strong> in my final year
+							Passionate and driven <strong>Software Engineering Student</strong> in my final semester
 							at Western University
 						</div>
 
